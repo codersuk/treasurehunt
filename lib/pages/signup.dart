@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'browse.dart';
 
 class PageSignup extends StatefulWidget {
   @override
@@ -32,7 +33,13 @@ class PageSignupState extends State<PageSignup> {
             ),
           ),
           RaisedButton(
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute<void>(
+                builder: (BuildContext context){
+                  return PageBrowse();
+                })
+              );
+            },
             child: Text(
               'Sign Up',
               style: TextStyle(fontSize: 20),
