@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/signup.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
       title: 'Treasure Hunt Game',
       theme: ThemeData(
 
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.lightBlue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+//      home: MyHomePage(title: 'Flutter Demo Home Page'),
+        home: PageSignup(),
     );
   }
 }
@@ -85,6 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
+            ),
+            Text(
+              'Hello Covent Garden'
             ),
             Text(
               '$_counter',
