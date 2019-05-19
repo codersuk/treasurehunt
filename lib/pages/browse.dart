@@ -15,7 +15,7 @@ class PageBrowseState extends State<PageBrowse> {
         appBar: AppBar(
           title: Text('welcome'),
         ),
-        body: ListView(children: getListItems()));
+        body: ListView(children: getListItems(),));
   }
 
   List<ListTile> getListItems() {
