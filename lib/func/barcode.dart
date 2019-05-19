@@ -9,13 +9,16 @@ class BarCodeScanner {
   Future<String> Scan() async {
     try {
       String barcode = await BarcodeScanner.scan();
-
       return barcode;
     } catch(e) {
       return "No barcode";
     }
   }
 
+  Future<String> get barCode async{
+    String s = await Scan();
+    return s;
+  }
 
 
 }
