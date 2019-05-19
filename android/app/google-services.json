@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "492339121275",
+    "firebase_url": "https://treasurehunt-codersuk.firebaseio.com",
+    "project_id": "treasurehunt-codersuk",
+    "storage_bucket": "treasurehunt-codersuk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492339121275:android:9f222d7770a344ff",
+        "android_client_info": {
+          "package_name": "uk.co.codersuk.treasurehunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492339121275-8eaivtv3jv7kqvvssoh0u9m301hj627h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTgYs3ATsH-DBZWMfKepYhWOOxGRIa19g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492339121275-8eaivtv3jv7kqvvssoh0u9m301hj627h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "492339121275-2ps2b0kkaqs85a92aaf90d5a95609vuo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uk.co.codersuk.treasurehunt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
