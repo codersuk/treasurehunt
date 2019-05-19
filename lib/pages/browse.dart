@@ -20,7 +20,7 @@ class PageBrowseState extends State<PageBrowse> {
 
   List<ListTile> getListItems() {
     return quizList.map((item) {
-      print(item);
+
       return new ListTile(
         leading: Icon(Icons.map),
         title: Text(item),

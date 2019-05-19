@@ -20,7 +20,7 @@ class TreasureHuntApp extends StatelessWidget {
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
 
 //    See guide on navigator routes: https://flutter.dev/docs/cookbook/navigation/named-routes
-      initialRoute: '/',
+      initialRoute: '/CurrentQuiz',
       routes: {
         '/': (context) => PageSignup(),
         '/browseGames': (context) => PageBrowse(),
