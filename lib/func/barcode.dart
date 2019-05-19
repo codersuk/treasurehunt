@@ -3,7 +3,7 @@ import 'dart:async';
 
 class BarCodeScanner {
   // ignore: non_constant_identifier_names
-  String ScannedCode;
+
 
 
   Future<String> Scan() async {
@@ -11,20 +11,11 @@ class BarCodeScanner {
       String barcode = await BarcodeScanner.scan();
 
       return barcode;
-    } on PlatformException catch (e) {
-      String this.ScannedCode = "error";
-      return "Error";
-    } on FormatException {
+    } catch(e) {
       return "No barcode";
     }
   }
 
-  Future<String> get Barcode() async {
-    String barC = await Scan();
-    this.ScannedCode = barC;
-
-    return barC;
-  }
 
 
 }

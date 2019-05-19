@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'pages/signup.dart';
 import 'pages/browse.dart';
 import 'pages/createteam.dart';
+import 'pages/currentQuiz.dart';
 
 void main() => runApp(TreasureHuntApp());
 
@@ -23,7 +24,9 @@ class TreasureHuntApp extends StatelessWidget {
       routes: {
         '/': (context) => PageSignup(),
         '/browseGames': (context) => PageBrowse(),
-        '/createTeam': (context) => CreateTeam()
+        '/createTeam': (context) => CreateTeam(),
+        '/CurrentQuiz': (context) => CurrentQuizPage(),
+
       },
     );
   }
