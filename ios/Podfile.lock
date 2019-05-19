@@ -1,4 +1,7 @@
 PODS:
+  - barcode_scan (0.0.1):
+    - Flutter
+    - MTBBarcodeScanner
   - Firebase/Auth (6.0.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.0.0)
@@ -84,6 +87,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
+  - MTBBarcodeScanner (5.0.11)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -91,6 +95,7 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - barcode_scan (from `.symlinks/plugins/barcode_scan/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_database (from `.symlinks/plugins/firebase_database/ios`)
@@ -111,9 +116,12 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - MTBBarcodeScanner
     - nanopb
 
 EXTERNAL SOURCES:
+  barcode_scan:
+    :path: ".symlinks/plugins/barcode_scan/ios"
   firebase_auth:
     :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
@@ -126,6 +134,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/flutter/ios"
 
 SPEC CHECKSUMS:
+  barcode_scan: 33f586d02270046fc6559135038b34b5754eaa4f
   Firebase: fa80b9d987ca014a1ba9357496ef2a0178b28b12
   firebase_auth: 7a2cc520766f90212b845a5b35316601707bfa25
   firebase_core: ce5006bb48508ee4e71e0f429a3f519bb8ee2961
@@ -143,6 +152,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
 PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
