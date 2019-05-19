@@ -10,7 +10,6 @@ class CreateTeam extends StatefulWidget {
 }
 
 class CreateTeamState extends State<CreateTeam> {
-
   int teamCode;
 
   @override
@@ -30,27 +29,30 @@ class CreateTeamState extends State<CreateTeam> {
         title: Text('Create Team'),
       ),
       body: Center(
-        child: Column (
+        child: Column(
           children: <Widget>[
-            Text(teamCode.toString()),
-            Flexible(
-              child: new Container(
-                child: Column(
-                  children: <Widget>[
-                    Text("Team member 1"),
-                    Text("Team member 2"),
-                    Text("Team member 3"),
-                  ],
-                )
-              )
+            Container(
+                child: Text(
+                  teamCode.toString(),
+                  style: TextStyle(fontSize: 24),
+                ),
+                padding: const EdgeInsets.all(10),
             ),
+            Flexible(
+                child: new Container(
+                    child: Column(
+              children: <Widget>[
+                Text("Team member 1"),
+                Text("Team member 2"),
+                Text("Team member 3"),
+              ],
+            ))),
             RaisedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute<void>(
-                    builder: (BuildContext context){
-                     // return PageBrowse();
-                    })
-                );
+                Navigator.push(context,
+                    MaterialPageRoute<void>(builder: (BuildContext context) {
+                  // return PageBrowse();
+                }));
               },
               child: Text("Start"),
             )
