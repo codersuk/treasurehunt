@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:barcode_scan/barcode_scan.dart';
-import 'package:flutter/material.dart' as prefix0;
 import 'package:treasurehunt/func/barcode.dart';
+import 'package:treasurehunt/func/locate.dart';
 
 class CurrentQuizPage extends StatefulWidget {
   @override
@@ -15,8 +14,16 @@ class _CurrentQuizPageState extends State<CurrentQuizPage> {
   String quizGame;
   String barcode = "";
   int _selectedIndex = 0;
+  Map<String, double> userLocation;
+  LocateFunction gps = LocateFunction();
 
   _CurrentQuizPageState({this.quizGame});
+
+  @override
+  void initState() {
+    gps.ins();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -93,8 +100,36 @@ class _CurrentQuizPageState extends State<CurrentQuizPage> {
           ),
         ),
         (this.barcode != null) ? Text(this.barcode) : Text('Error'),
+        Container(
+          child: RaisedButton(
+            color: Colors.redAccent,
+            child: Text(
+              'Get GPS',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 20, color: Colors.white),
+            ),
+            onPressed: () {
+              getLocation();
+            },
+          ),
+        ),
+        (this.userLocation != null)
+            ? Text(userLocation['latitude'].toString() +
+                ", " +
+                userLocation['longitude'].toString())
+            : Text('Error')
       ],
     );
+  }
+
+  Future<void> getLocation() async {
+    Map<String, double> ss = await gps.getloc();
+
+    print(ss);
+
+    setState(() {
+      userLocation = ss;
+    });
   }
 
   Widget team() {

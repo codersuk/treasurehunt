@@ -32,4 +32,6 @@
     </application>
     <uses-permission android:name="android.permission.CAMERA" />
     <activity android:name="com.apptreesoftware.barcodescan.BarcodeScannerActivity"/>
+<!--    Gelocation-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>

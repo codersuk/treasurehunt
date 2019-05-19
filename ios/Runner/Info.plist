@@ -45,6 +45,10 @@
 	<false/>
 	<key>NSCameraUsageDescription</key>
     <string>Camera permission is required for barcode scanning.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Needed to check for location of treasure cache</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Needed to check location of treasure cache</string>
 
 </dict>
 </plist>
