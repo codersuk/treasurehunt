@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:treasurehunt/pages/createteam.dart';
-import 'createteam.dart';
 
 class PageBrowse extends StatefulWidget {
   @override
@@ -17,25 +15,19 @@ class PageBrowseState extends State<PageBrowse> {
         appBar: AppBar(
           title: Text('welcome'),
         ),
-        body: ListView(
-          children: getListItems()
-        ));
+        body: ListView(children: getListItems()));
   }
 
   List<ListTile> getListItems() {
     return quizList.map((item) {
-        print(item);
-        return new ListTile(
-          leading: Icon(Icons.map),
-          title: Text(item),
-          onTap: () {
-            Navigator.push(context, MaterialPageRoute<void>(
-              builder: (BuildContext context) {
-                return CreateTeam();
-              }
-            ));
-          },
-        );
+      print(item);
+      return new ListTile(
+        leading: Icon(Icons.map),
+        title: Text(item),
+        onTap: () {
+          Navigator.pushNamed(context, '/createTeam');
+        },
+      );
     }).toList();
   }
 }
